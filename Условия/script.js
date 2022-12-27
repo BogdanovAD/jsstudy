@@ -17,7 +17,7 @@ if (num < 50) {
 }
 
 //                   true                 false
-num === 50 ? console.log('ok') : console.log('error'); //Тернарный или условный оператор
+num === 50 ? console.log('ok') : console.log('error'); //Тернарный или условный операторыкптукптпк
 
 const numb = 55;
 
