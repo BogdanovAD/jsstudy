@@ -17,7 +17,7 @@ if (num < 50) {
 }
 
 //                   true                 false
-num === 50 ? console.log('ok') : console.log('error'); //Тернарный или условный оператор
+num == 50 ? console.log('ok') : console.log('error'); //Тернарный или условный оператор
 
 const numb = 55;
 
@@ -52,3 +52,44 @@ let johnReport,
     samReport,
     maryReport = 'done';
 console.log(johnReport || alexReport || samReport || maryReport);
+
+let a = 0;
+
+if (a != 0) {
+    console.log('YES');
+} else {
+    console.log('NO');
+}
+
+let test = true;
+
+test != true ? console.log('yes') : console.log('no');
+
+let c = 2;
+b = 4;
+
+if ((c > 2 && c < 11) || (b >= 6 && b < 14)) {
+    console.log('YES');
+} else {
+    console.log('NO');
+}
+
+let x = 3,
+    result;
+
+switch (x) {
+    case 1:
+        result = 'winter';
+        break;
+    case 2:
+        result = 'spring';
+        break;
+    case 3:
+        result = 'summer';
+        break;
+    case 4:
+        result = 'autum';
+        break;
+}
+
+console.log(result);
