@@ -65,8 +65,8 @@ let test = true;
 
 test != true ? console.log('yes') : console.log('no');
 
-let c = 2;
-b = 4;
+let c = 2,
+    b = 4;
 
 if ((c > 2 && c < 11) || (b >= 6 && b < 14)) {
     console.log('YES');
