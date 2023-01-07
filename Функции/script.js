@@ -24,3 +24,37 @@ function humanSayHello(user) {
 
 humanSayHello('Sasha');
 console.log(count);
+
+// function getMathResult(num, set) {
+//     if (set <= 0 || typeof set !== 'number') {
+//         return num;
+//     }
+
+//     let str = '';
+
+//     for (let i = 1; i <= set; i++) {
+//         if (i === set) {
+//             str += `${num * i}`;
+//         } else {
+//             str += `${num * i}---`;
+//         }
+//     }
+//     console.log(str);
+//     return str;
+// }
+
+// getMathResult(10, 5);
+
+function getMathResult(a, b) {
+    let result = a;
+    if (b <= 0 || typeof b !== 'number') {
+        result;
+    } else {
+        for (let i = 2; i <= b; i++) {
+            result += `---${a * i}`;
+        }
+    }
+    console.log(result);
+    return result;
+}
+getMathResult(10, 5);
