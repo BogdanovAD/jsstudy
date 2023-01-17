@@ -58,3 +58,35 @@ function getMathResult(a, b) {
     return result;
 }
 getMathResult(10, 5);
+
+function getTimeFromMinutes(minutesTotal) {
+    if (typeof minutesTotal !== 'number' || minutesTotal < 0 || !Number.isInteger(minutesTotal)) {
+        return 'Ошибка, проверьте данные';
+    }
+    const hours = Math.floor(minutesTotal / 60);
+    const minutes = minutesTotal % 60;
+
+    let hoursText = '';
+    switch (hours) {
+        case 1:
+        case 21:
+            hoursText = 'час';
+            break;
+        case 2:
+        case 3:
+        case 4:
+        case 22:
+        case 23:
+        case 24:
+            hoursText = 'часа';
+            break;
+        default:
+            hoursText = 'часов';
+    }
+    if (hours === 0) {
+        return `Это ${minutes} минут`;
+    } else {
+        return `Это ${hours} ${hoursText} и ${minutes} минут`;
+    }
+}
+console.log(getTimeFromMinutes(149));
